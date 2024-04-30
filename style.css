@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +6,28 @@
   font-family: sans-serif;
 }
 
+/* Gradient text effect */
 .colorful-text {
   background: linear-gradient(45deg, #f9004d, #ff7e00, #008cff, #d217c5, #00ffea, #4f00ff);
   -webkit-background-clip: text;
-  font-size: 3em;
   background-clip: text;
   color: transparent;
-  text-size-adjust: 100px;
-  animation: watery 1ms ease-in-out infinite;
+  font-size: 3em;
+  text-size-adjust: 100px; /* Note: This property is not supported in most browsers */
+  animation: watery 1s ease-in-out infinite;
 }
 
+/* Keyframes for text animation */
 @keyframes watery {
-  0%, 100% { background-position: 0 0; }
-  50% { background-position: 100% 0; }
+  0%, 100% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
 }
 
+/* General layout */
 section {
   width: 100%;
   height: 100vh;
@@ -32,6 +40,7 @@ section header {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo styles */
 section header .logo {
   font-size: 30px;
   color: black;
@@ -41,9 +50,10 @@ section header .logo {
 }
 
 section header .logo span {
-  color: #f9004d;
+  color: #6966B0;
 }
 
+/* Navigation styles */
 section header ul {
   list-style: none;
 }
@@ -60,29 +70,42 @@ section header ul li a {
 }
 
 section header ul li a:hover {
-  color: #f9004d;
+  color: #6966B0;
 }
-
+a{
+  text-decoration: none;
+  color:#000000;
+}
+/* Button styles */
 section header p {
   cursor: pointer;
   padding: 10px 25px;
-  border: 1px solid #b36982;
+  border: 1px solid #6966B0;
   border-radius: 30px;
   transition: 0.3s;
+}
+#SU :hover{
+  color: white;
+  background: #6966B0;
+}
+#abx :hover{
+  color: white;
+  background: #6966B0;
 }
 
 section header p:hover {
   color: white;
-  background: #b36982;
+  background: #6966B0;
 }
 
+/* Background circles */
 .circle {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(108, 105, 179);
+  background: rgb(105, 102, 176);
   clip-path: circle(320px at left -230px);
   z-index: -1;
 }
@@ -93,22 +116,35 @@ section header p:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b36982;
+  background: #6966B0;
   clip-path: circle(250px at right 800px);
   z-index: -1;
 }
 
+/* Text content styles */
 section .texts h1 {
   position: absolute;
   top: 30%;
   left: 4%;
-  font-size: 60px;
+  font-size: 50px;
   color: #6a6666;
 }
 
 section .texts h1 span {
-  color: #b36982;
+  color: #6966B0;
 }
+section .texts h2 {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  font-size: 50px;
+  color: #6966B0;
+}
+
+section .texts h2 span {
+  color: #6966B0;
+}
+
 
 section .texts p {
   width: 650px;
@@ -117,8 +153,11 @@ section .texts p {
   left: 4%;
   line-height: 26px;
   text-align: justify;
+  font-family: cursive;
+  
 }
 
+/* Background image */
 section .background_image img {
   width: 750px;
   position: absolute;
@@ -126,7 +165,14 @@ section .background_image img {
   left: 47%;
   margin-left: 25px;
 }
-
+#Nav-but{
+  display: flex;
+  justify-content: space-evenly;
+}
+#log{
+  margin-left: 20px;
+}
+/* Button group */
 section .btn {
   position: relative;
   top: 77%;
@@ -138,24 +184,27 @@ section .btn {
 }
 
 section .btn .read {
-  background: #b36982;
+  background: #ffffff;
   color: white;
   cursor: pointer;
 }
-
 section .btn p {
   padding: 10px 25px;
   background: none;
-  border: 2px solid #b36982;
-  cursor: pointer;
+  border: 2px solid #6966B0;
+
+  text-decoration: none; /* Hide the underline */
 }
 
+
+/* About section */
 .about {
   width: 100%;
   height: 240vh;
   padding: 50px;
 }
 
+/* Box layout for images */
 .about .box {
   width: 100%;
   padding: 60px 0;
@@ -188,25 +237,39 @@ section .btn p {
 
 .about hr {
   height: 2px;
-  background: #d98ca5;
+  background: #6966B0;
   border-radius: 5px;
   margin: 30px 110px;
 }
 
+/* Arts section */
 .about .Arts h1 {
   font-size: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 35px 0;
+  background: linear-gradient(45deg, #f9004d, #ff7e00, #008cff, #d217c5, #00ffea, #4f00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-text 8ms linear infinite;
 }
 
-.about .Arts p {
-  text-align: center;
-  margin: 35px 0;
-  color: gray;
-  font-size: 25px;
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
+
+
+
+
+
+
 
 .about .arts_box {
   width: 100%;
@@ -257,89 +320,32 @@ section .btn p {
   background: #f9004d;
 }
 
-.about .Needs p {
-  text-align: center;
-  margin: 35px 0;
-  color: gray;
-  font-size: 25px;
-}
-
-.about .needs_box {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
-}
-
-.about .needs_box .needs_card {
-  background: #9d9d9d;
-  width: 350px;
-  padding: 25px 25px;
-  text-align: center;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.about .needs_box .needs_card:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-}
-
-.about .needs_box .needs_card img {
-  width: 250px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.about .needs_box .needs_card img:hover {
-  transform: scale(1.1);
-}
-
-.about .needs_box .needs_card h1 {
-  font-size: 35px;
-  color: gainsboro;
-  margin: 15px 0;
-}
-
-.about .needs_box .needs_card p {
-  color: white;
-  margin: 25px 0;
-  font-size: 17px;
-}
-
-.about .needs_box .needs_card .btn {
-  text-decoration: none;
-  color: white;
-  padding: 10px 30px;
-  background: #f9004d;
-  text-align: center;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-.footer{
+/* Footer styles */
+.footer {
   background: #24262b;
   padding: 50px;
 }
 
-.footer .main{
+.footer .main {
   max-width: 1170px;
   margin: auto;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer_col{
+.footer_col {
   width: 25%;
   padding: 0 15px;
 }
 
-.footer_col h4{
+.footer_col h4 {
   font-size: 18px;
   color: white;
   text-transform: capitalize;
@@ -348,7 +354,7 @@ ul{
   position: relative;
 }
 
-.footer_col h4::before{
+.footer_col h4::before {
   content: '';
   position: absolute;
   left: 0;
@@ -359,17 +365,95 @@ ul{
   width: 50px;
 }
 
-.footer_col ul li{
+.footer_col ul li {
   margin-bottom: 20px;
 }
 
-.footer_col ul li a{
+.footer_col ul li a {
   text-decoration: none;
   color: #6d6d6d;
   cursor: pointer;
 }
 
-.footer_col .social img{
+.footer_col .social img {
   width: 20px;
   margin: 5px;
-} 
+}
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff; /* Text color for better contrast */
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+

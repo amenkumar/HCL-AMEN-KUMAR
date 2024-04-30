@@ -1,0 +1,52 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+}
+
+header {
+    background-color: #f5d0d7;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #f5d0d7;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.workshop img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}

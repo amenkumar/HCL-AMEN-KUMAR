@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="stylee.css">
+
+   <!-- custom js file link  -->
+   <script src="script1.js" defer></script>
+
+   <style>
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         font-family: Arial, sans-serif;
+         background-color:rgb(236, 162, 135);
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 100vh;
+      }
+
+      .top-icons {
+         position: absolute;
+         top: 0;
+         right: 0;
+         margin: 10px;
+         font-size: 25px;
+         color: white; /* Add this line to make the icons visible on the background */
+      }
+
+      .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+         color: white; /* Add this line to make the text visible on the background */
+      }
+
+      .title {
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .products-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+      }
+
+      .product {
+         border: 1px solid #ccc;
+         padding: 10px;
+         text-align: center;
+         background-color: rgba(255, 255, 255, 0.8); /* Example background color with transparency */
+      }
+
+      .product img {
+         max-width: 100%;
+         height: auto;
+      }
+
+      .price {
+         font-weight: bold;
+         color: green;
+         margin-top: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="top-icons">
+      <i class="fas fa-shopping-cart"></i> <!-- Cart symbol -->
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-search" id="searchIcon"></i> <!-- Love symbol -->
+   </div>
+
+   <div class="container">
+      <h3 class="title"> Arts Gallery </h3>
+
+      <div class="products-container">
+
+         <div class="product" data-name="p-1">
+            <img src="Arts3.png" alt="">
+            <h3>Artist : </h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-2">
+            <img src="Arts4.png" alt="">
+            <h3>Artist ;</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-3">
+            <img src="Arts6.png" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-4">
+            <img src="art9.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-5">
+            <img src="art13.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-6">
+            <img src="art7.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+         <div class="product" data-name="p-1">
+            <img src="art8.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-2">
+            <img src="art10.jpeg" alt="">
+            <h3>oArtist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-3">
+            <img src="art13.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-4">
+            <img src="art16.jpeg" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-5">
+            <img src="Art2.png" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+         <div class="product" data-name="p-6">
+            <img src="Art1.png" alt="">
+            <h3>Artist:</h3>
+            <div class="price">$2.00</div>
+         </div>
+
+
+      </div>
+   </div>
+</body>
+</html>

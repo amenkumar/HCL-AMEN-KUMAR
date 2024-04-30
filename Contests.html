@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Contest</title>
+<link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <header class="title">
+        <img src="Art Contest_logo.png" alt="Art Contest Image" class="header-image ,aurora_item">
+        
+        <p>Welcome to our art contest! Submit your artwork for a chance to win great prizes.</p>
+    </header>
+    
+    
+<main>
+    <section>
+        <h2>How to Enter</h2>
+        <p>Submit your artwork by filling out the form below. Please make sure to read the rules and guidelines before submitting.</p>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="artwork">Artwork:</label>
+            <input type="file" id="artwork" name="artwork" accept="image/*" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section>
+        <h2>Prizes</h2>
+        <p>1st Place: $500<br>2nd Place: $300<br>3rd Place: $200</p>
+    </section>
+    <section>
+        <h2>Judging Criteria</h2>
+        <p>Entries will be judged based on creativity, originality, and adherence to the theme.</p>
+    </section>
+    <section>
+        <h2>Rules and Regulations</h2>
+        <ul>
+            <li>Participants must be 18 years or older.</li>
+            <li>Each participant can submit up to two artworks.</li>
+            <li>Artwork must be original and not previously published.</li>
+            <li>Artwork must be submitted in digital format.</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>Contact us at <a href="mailto:chitikenaamenkumar@.com">chitikenaamenkumar@.com</a> for any questions.</p>
+</footer>
+</body>
+</html>

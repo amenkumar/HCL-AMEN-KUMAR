@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroundsignup2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full height of the viewport */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(205, 120, 226); /* Change the color to white smoke */
+    margin-bottom: 30px; /* Increase margin-bottom for spacing */
+    font-size: calc(2em + 10px); /* Increase font size by 10px */
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation-name: colorChange;
+    animation-duration: 5s; /* Animation duration */
+    animation-iteration-count: infinite; /* Repeat the animation indefinitely */
+    animation-timing-function: ease;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgba(145, 187, 21, 0.8); /* Start color */
+    }
+    50% {
+        background-color: rgba(255, 99, 71, 0.8); /* Middle color */
+    }
+    100% {
+        background-color: rgba(0, 191, 255, 0.8); /* End color */
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #169aca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #19cbdb;
+}
